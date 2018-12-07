@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.education.centredetri.connexion">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:background="@drawable/img"
+        android:orientation="vertical">
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="40dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittextstyle"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="Email ou Nom Utilisateur"
+            android:inputType="textEmailAddress"
+            android:textColorHint="#3333" />
+
+        <EditText
+            android:id="@+id/et_mdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edittextstyle"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="mot de passe"
+            android:inputType="textEmailAddress"
+            android:textColorHint="#3333" />
+
+        <Button
+            android:id="@+id/bt_connection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/buttonstyle4"
+            android:text="Me connecter"
+            android:textColor="#fff" />
+
+        <TextView
+            android:id="@+id/tv_mdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:text="mot de passe oublié?"
+            android:textColor="#6e6e6e"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_sinscrire"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:text="Vous êtes nouveau ? s'inscrire"
+            android:textColor="#6e6e6e"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
