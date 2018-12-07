@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="300dp"
+    android:layout_gravity="center"
+    android:background="@color/blanc"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:padding="5dp">
+
+
+    <TextView
+        android:id="@+id/tv_close"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="end"
+        android:background="@drawable/cerclebackgroundyello"
+        android:gravity="center"
+        android:text="X"
+        android:textColor="@color/bleu"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/edittextstyle3"
+        android:drawableLeft="@drawable/ic_racemail"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/ic_racemail"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#6e6e6e" />
+    <Button
+        android:id="@+id/bt_valider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_gravity="center"
+        android:background="@drawable/buttonstyle4"
+        android:text="valider"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/tv_mp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:text="Confirmer votre mot de passe"
+        android:textSize="18sp" />
+
+</LinearLayout>
+
+
+

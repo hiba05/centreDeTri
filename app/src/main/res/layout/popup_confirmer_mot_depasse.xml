@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="390dp"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+
+    <TextView
+        android:id="@+id/tv_close"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="end"
+        android:background="@drawable/cerclebackgroundyello"
+        android:gravity="center"
+        android:text="X"
+        android:textColor="@color/bleu"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/edittextstyle3"
+        android:drawableLeft="@drawable/ic_code"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/ic_code"
+        android:ems="10"
+        android:hint="Code"
+        android:inputType="number"
+        android:textColorHint="#6e6e6e"
+        android:tint="@color/blanc" />
+
+    <EditText
+        android:id="@+id/et_mdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/edittextstyle3"
+        android:drawableLeft="@drawable/ic_motdepasse"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/ic_motdepasse"
+        android:ems="10"
+        android:hint="Nouveau mot de passe"
+        android:inputType="textPassword"
+        android:textColorHint="#6e6e6e" />
+
+    <EditText
+        android:id="@+id/et_cmdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/edittextstyle3"
+        android:drawableLeft="@drawable/ic_motdepasse"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/ic_motdepasse"
+        android:ems="10"
+        android:hint="Confirmer le nouveau mot de passe"
+        android:inputType="textPassword"
+        android:textColorHint="#6e6e6e" />
+
+    <Button
+        android:id="@+id/bt_confirmer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+        android:background="@drawable/buttonstyle4"
+        android:text="Confirmer"
+        android:textColor="#fff" />
+
+</LinearLayout>
+
+

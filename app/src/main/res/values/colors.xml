@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#f0c610</color>
+    <color name="colorPrimaryDark">#f0c610</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="blanc">#ffffff</color>
+    <color name="bleu">#15a187</color>
+    <color name="bleuClair">#1abe9c</color>
+    <color name="transparent">#80ffffff</color>
+    <color name="grisc">#efeded</color>
+    <color name="gris">#a7a3a3</color>
+    <color name="colorFB">#486BA3</color>
+    <color name="colorGmail">#C03B2B</color>
+</resources>
