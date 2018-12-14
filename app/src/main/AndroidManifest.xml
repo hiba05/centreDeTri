@@ -2,7 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.education.centredetri">
 
-
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
@@ -24,7 +23,8 @@
         <activity android:name=".compteCentre.sinscrire" />
         <activity android:name=".connexion" />
         <activity android:name=".compteCentre.compteCentre" />
-        <activity android:name=".evenement.ListeEvenement"></activity>
+        <activity android:name=".evenement.ListeEvenement" />
+        <activity android:name=".evenement.detailsEvent"></activity>
     </application>
 
 </manifest>

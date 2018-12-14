@@ -17,6 +17,7 @@ import android.widget.TextView;
 import com.example.education.centredetri.R;
 import com.example.education.centredetri.compteCentre.compteCentre;
 import com.example.education.centredetri.compteCentre.sinscrire;
+import com.example.education.centredetri.evenement.ListeEvenement;
 
 public class connexion extends AppCompatActivity implements View.OnClickListener{
 
@@ -123,7 +124,7 @@ public class connexion extends AppCompatActivity implements View.OnClickListener
             Intent i = new Intent(v.getContext(), sinscrire.class);
             startActivityForResult(i, 0);}
      else if(v == bt_connection ){
-        Intent i = new Intent(v.getContext(), compteCentre.class);
+        Intent i = new Intent(v.getContext(), ListeEvenement.class);
         startActivityForResult(i, 0);}
 
      else if (v == tv_mdp) {

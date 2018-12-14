@@ -1,208 +1,135 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.education.centredetri.compteCentre.compteCentre">
+    tools:context="com.example.education.centredetri.compteCentre.compteCentre"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/RL_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/grad"
+        android:paddingBottom="20dp">
+
+    <RelativeLayout
+        android:id="@+id/imgUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/circle_border">
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="30dp"
+            android:adjustViewBounds="true"
+            android:padding="3dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/image" />
+
+    </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/iv_deconnexion"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_deconnexion" />
+
+        <ImageView
+            android:id="@+id/iv_goBack"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/iv_deconnexion"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_arrow" />
+
+    </RelativeLayout>
 
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="16dp">
 
-        <RelativeLayout
-            android:id="@+id/RL_1"
+
+        <EditText
+            android:id="@+id/et_nomEtPrenom"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/grad"
-            android:paddingBottom="20dp">
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:drawableLeft="@drawable/ic_create"
+            android:drawablePadding="10dp"
+            android:background="@drawable/edittextstyle"
+            android:hint="Nom et prénom "
+            android:inputType="textPersonName"
+            android:textColorHint="#6e6e6e"
+            android:tint="@color/blanc" />
 
-        <RelativeLayout
-            android:id="@+id/imgUser"
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:drawableLeft="@drawable/ic_create"
+            android:drawablePadding="10dp"
+            android:background="@drawable/edittextstyle"
+            android:hint="N°téléphone"
+            android:inputType="phone"
+            android:textColorHint="#6e6e6e"
+            android:tint="@color/blanc" />
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/edittextstyle"
+            android:drawableLeft="@drawable/ic_create"
+            android:drawablePadding="10dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textColorHint="#6e6e6e" />
+
+        <EditText
+            android:id="@+id/et_mdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/edittextstyle"
+            android:hint="Entrer votre mot de passe"
+            android:inputType="textEmailAddress"
+            android:textColorHint="#6e6e6e" />
+
+        <Button
+            android:id="@+id/bt_valider"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="20dp"
-            >
-
-            <ImageView
-                android:layout_width="120dp"
-                android:layout_height="120dp"
-                android:layout_margin="9dp"
-                android:adjustViewBounds="true"
-                android:padding="3dp"
-                android:scaleType="centerInside"
-                android:src="@drawable/logo" />
-
-        </RelativeLayout>
-
-
-            <TextView
-                android:id="@+id/tv_nomPrenom"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/imgUser"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="15sp"
-                android:text="Entreprise Entre"
-                android:textColor="@color/blanc"
-                android:textSize="32sp" />
-
-
-            <ImageView
-                android:id="@+id/iv_deconnexion"
-                android:layout_width="55dp"
-                android:layout_height="55dp"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_marginEnd="15dp"
-                android:layout_marginRight="15dp"
-                android:layout_marginTop="15dp"
-                android:adjustViewBounds="true"
-                android:scaleType="centerInside"
-                android:src="@drawable/ic_deconnexion" />
-
-
-            <ImageView
-                android:id="@+id/iv_notif"
-                android:layout_width="55dp"
-                android:layout_height="55dp"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_alignTop="@+id/iv_deconnexion"
-                android:layout_marginLeft="14dp"
-                android:layout_marginStart="14dp"
-                android:adjustViewBounds="true"
-                android:scaleType="centerInside"
-                android:src="@drawable/ic_brightness" />
-
-        </RelativeLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:baselineAligned="false"
-            android:orientation="horizontal">
-
-
-
-            <LinearLayout
-                android:id="@+id/listEvents"
-                android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                android:layout_weight="1"
-                android:paddingBottom="5dp"
-                android:background="@color/grisc"
-                android:gravity="center_horizontal"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp"
-                    android:text="Listes des évènements"
-                    android:textAllCaps="true"
-                    android:textStyle="bold"
-                    android:textColor="@color/colorPrimary"
-                    android:textSize="13sp" />
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
-            android:layout_marginTop="30dp"
-            android:orientation="vertical">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Adresse"
-                    android:textColor="@color/colorPrimaryDark"
-                    android:textSize="13sp" />
-
-                <TextView
-                    android:id="@+id/tv_adresse"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="17 rue elnoui ben zadi"
-                    android:textColor="@color/gris"
-                    android:textSize="18sp" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_marginTop="15dp"
-                    android:background="@color/grisc" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Fix"
-                    android:textColor="@color/colorPrimaryDark"
-                    android:textSize="13sp" />
-
-                <TextView
-                    android:id="@+id/tv_fix"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="021 87 48 26"
-                    android:textColor="@color/gris"
-                    android:textSize="18sp" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_marginTop="15dp"
-                    android:background="@color/grisc" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Email"
-                    android:textColor="@color/colorPrimaryDark"
-                    android:textSize="13sp" />
-
-                <TextView
-                    android:id="@+id/tv_email"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="ne9iha@gmail.com"
-                    android:textColor="@color/gris"
-                    android:textSize="18sp" />
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-
-
+            android:layout_gravity="center"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/buttonstyle4"
+            android:text="valider"
+            android:textColor="#fff" />
 
 
 
@@ -216,5 +143,4 @@
 
 
 
-
-</ScrollView>
+</LinearLayout>

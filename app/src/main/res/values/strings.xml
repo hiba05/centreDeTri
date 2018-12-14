@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">CentreDeTri</string>
     <string name="logo">Logo</string>
+    <string name="TitreEvent">Tri sélectif à la cité des Bananiers</string>
+    <string name="Details">L’Agence Nationale des Déchets œuvre à introduire progressivement
+        la collecte sélective en Algérie à travers le projet pour lequel elle a été mandaté par
+        le ministère chargé de l’environnement à savoir : quartier propre. Parallèlement à cela,
+        plusieurs opérateurs ont aussi initié des opérations de collectes sélectives telles que NET COM et EXTRA NET</string>
 </resources>

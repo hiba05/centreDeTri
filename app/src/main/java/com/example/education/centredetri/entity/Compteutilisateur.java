@@ -8,20 +8,26 @@ public class Compteutilisateur {
 
     private String adresse;
     private Integer idcompte;
+    private Integer nbpoint;
     private String nomentreprise;
     private String nomprenom;
     private Integer numrgst;
     private String numtel;
     private Utilisateur utilisateur;
 
-    public Compteutilisateur(String adresse,String nomentreprise, String nomprenom,Integer numrgst,String numtel,Utilisateur utilisateur){
+
+    public Compteutilisateur(String adresse,String nomentreprise,Integer nbpoint, String nomprenom,Integer numrgst,String numtel,Utilisateur utilisateur){
         this.adresse=adresse;
         this.nomentreprise=nomentreprise;
         this.nomprenom=nomprenom;
         this.numrgst=numrgst;
         this.numtel=numtel;
+        this.nbpoint=nbpoint;
         this.utilisateur=utilisateur;
     }
+
+
+
 
     public String getAdresse() {
         return adresse;
@@ -37,6 +43,14 @@ public class Compteutilisateur {
 
     public void setIdcompte(Integer idcompte) {
         this.idcompte = idcompte;
+    }
+
+    public Integer getNbpoint() {
+        return nbpoint;
+    }
+
+    public void setNbpoint(Integer nbpoint) {
+        this.nbpoint = nbpoint;
     }
 
     public String getNomentreprise() {
@@ -78,7 +92,6 @@ public class Compteutilisateur {
     public void setUtilisateur(Utilisateur utilisateur) {
         this.utilisateur = utilisateur;
     }
-
 
 
 }

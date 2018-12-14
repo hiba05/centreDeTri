@@ -146,7 +146,7 @@ if(v==bt_inscription){
 
     Profil profil= new Profil(1,"entreprise","centreDeTri");
     Utilisateur utilisateur= new Utilisateur(email,MotDepasseH,profil);
-    Compteutilisateur compte= new Compteutilisateur(adresse,nomEntreprise,Representant,numRegst,phone,utilisateur);
+    Compteutilisateur compte= new Compteutilisateur(adresse,nomEntreprise,0,Representant,numRegst,phone,utilisateur);
     new EnvoieAsyncTask(compte).execute(UrlCompte);
 }
 
@@ -218,16 +218,14 @@ if(v==bt_inscription){
         JSONObject jsonObject1 = new JSONObject();
 
         try {
-
-
-
-
             jsonObject1.accumulate("adresse", compte.getAdresse());
             jsonObject1.accumulate("idcompte", "");
-            jsonObject1.accumulate("nomentreprise", compte.getAdresse());
+            jsonObject1.accumulate("nbpoint", 0);
+
+            jsonObject1.accumulate("nomentreprise", compte.getNomentreprise());
         jsonObject1.accumulate("nomprenom", compte.getNomprenom());
         jsonObject1.accumulate("numrgst", compte.getNumrgst());
-        jsonObject1.accumulate("numtel", compte.getAdresse());
+        jsonObject1.accumulate("numtel", compte.getNumtel());
 
         JSONObject utilisateur = new JSONObject();
         utilisateur.accumulate("email", compte.getUtilisateur().getEmail());
